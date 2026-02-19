@@ -1,0 +1,18 @@
+defaults:
+  - dataset: none
+  - partition: none
+  - /model: logreg
+  - fl: base
+  - aggregator: fedavg
+  - scorer: none
+  - experiment: debug_stub
+  - _self_
+
+run:
+  out_dir: runs
+  exp_name: ${experiment.name}
+  timestamp: ${now:%Y%m%d_%H%M%S}
+  save_resolved_config: true
+
+seed: 0
+device: gpu

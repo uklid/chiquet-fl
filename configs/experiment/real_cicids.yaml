@@ -1,0 +1,11 @@
+# @package _global_
+defaults:
+  - override /dataset: cicids2017
+  - override /partition: source_k
+  - override /aggregator: fedavg
+  - override /scorer: global_val_harm
+  - _self_
+
+experiment:
+  name: real_cicids
+  notes: "Real-source FL on CICIDS2017 (source-id clients, no label/update poisoning)."

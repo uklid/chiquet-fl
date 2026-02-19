@@ -1,0 +1,18 @@
+name: cicids2017
+params:
+  data_path: data/cicids2017.csv
+  file_format: auto
+  delimiter: ","
+  max_rows: null
+  label_col: null
+  label_col_candidates: ["Label", "label", " Label"]
+  source_col: null
+  source_col_candidates: ["Source IP", " Source IP", "src_ip", "srcip", "Src IP", "SrcAddr"]
+  drop_cols: []
+  benign_labels: ["BENIGN", "Benign", "benign", "normal", "Normal", "background", "Background", "0"]
+  attack_labels: null
+  global_test_frac: 0.2
+  global_val_frac: 0.1
+  standardize_mode: global_train_only
+  fillna: median
+  attack_ratio_threshold: 0.8

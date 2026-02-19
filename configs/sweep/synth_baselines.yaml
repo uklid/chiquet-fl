@@ -1,0 +1,5 @@
+name: synth_baselines
+description: "FedAvg baselines: pure (none scorer) and cosine-weighted, across 3 seeds."
+overrides:
+  - experiment=synth_fedavg_pure,synth_fedavg_cosine
+  - seed=0,1,2

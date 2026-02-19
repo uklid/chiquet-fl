@@ -1,0 +1,12 @@
+rounds: 3
+sample_fraction: 1.0
+local_epochs: 1
+batch_size: 32
+lr: 0.01
+method: fedavg
+fedprox_mu: 0.0
+debug_fedprox: false
+optimizer: sgd
+eval_every: 1
+weight_decay: 0.0
+grad_clip: null

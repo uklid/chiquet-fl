@@ -1,0 +1,18 @@
+# @package _global_
+defaults:
+  - override /dataset: synth2d
+  - override /aggregator: choquet_2add
+  - _self_
+
+experiment:
+  name: synth_ablation_A
+  notes: "Ablation A: fix aggregator=choquet_2add, vary scorer."
+  # Used by external multirun override: scorer=cosine,entropy,shift
+  scorers: [cosine, entropy, shift]
+  seeds: [0, 1, 2]
+
+dataset:
+  params:
+    noise_clients_frac: 0.3
+    noise_rate: 0.2
+    attack_clients_frac: 0.1

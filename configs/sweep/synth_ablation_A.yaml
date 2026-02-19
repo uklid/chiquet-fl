@@ -1,0 +1,6 @@
+name: synth_ablation_A
+description: "Hydra multirun grid for ablation A (fixed choquet_2add, vary scorer, 3 seeds)."
+overrides:
+  - experiment=synth_ablation_A
+  - scorer=cosine,entropy,shift
+  - seed=0,1,2

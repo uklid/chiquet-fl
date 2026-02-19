@@ -1,0 +1,18 @@
+name: ton_iot
+params:
+  data_path: data/ton_iot.csv
+  file_format: auto
+  delimiter: ","
+  max_rows: null
+  label_col: null
+  label_col_candidates: ["label", "Label", "type", "attack"]
+  source_col: null
+  source_col_candidates: ["src_ip", "srcip", "src_ip_addr", "source_ip", "device", "src_host", "host"]
+  drop_cols: []
+  benign_labels: ["normal", "Normal", "benign", "Benign", "0"]
+  attack_labels: null
+  global_test_frac: 0.2
+  global_val_frac: 0.1
+  standardize_mode: global_train_only
+  fillna: median
+  attack_ratio_threshold: 0.8

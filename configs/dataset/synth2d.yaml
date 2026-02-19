@@ -1,0 +1,19 @@
+name: synth2d
+params:
+  n_clients: 10
+  num_clients: ${.n_clients}
+  n_samples_total: 2000
+  samples_per_client: null
+  n_global_val_samples: null
+  n_test_samples: null
+  standardize_mode: global_train_only
+  quantity_skew: 0.3
+  label_skew: 0.4
+  class_sep: 1.0
+  flip_y: 0.03
+  label_noise_rate: 0.05
+  noise_clients_frac: 0.2
+  noise_rate: 0.2
+  attack_clients_frac: 0.1
+  attack_mode: label_flip
+  attack_scale: 1.0

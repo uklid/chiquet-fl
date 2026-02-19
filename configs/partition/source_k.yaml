@@ -1,0 +1,7 @@
+name: source_k
+params:
+  n_clients: null
+  max_clients: ${.n_clients}
+  min_samples_per_client: 20
+  min_train_samples: ${.min_samples_per_client}
+  min_val_samples: 0

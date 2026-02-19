@@ -1,0 +1,5 @@
+name: loss_improvement
+params:
+  subset_size: null
+  seed: 0
+  eps: 1.0e-12

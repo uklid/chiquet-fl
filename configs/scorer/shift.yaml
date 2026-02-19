@@ -1,0 +1,5 @@
+name: shift
+params:
+  metric: js
+  k: 4.0
+  eps: 1.0e-12

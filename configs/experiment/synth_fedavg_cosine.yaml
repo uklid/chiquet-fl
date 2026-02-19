@@ -1,0 +1,10 @@
+# @package _global_
+defaults:
+  - override /dataset: synth2d
+  - override /aggregator: fedavg
+  - override /scorer: cosine
+  - _self_
+
+experiment:
+  name: synth_fedavg_cosine
+  notes: "FedAvg weighted by cosine reliability"

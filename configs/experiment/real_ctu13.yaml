@@ -1,0 +1,11 @@
+# @package _global_
+defaults:
+  - override /dataset: ctu13
+  - override /partition: source_k
+  - override /aggregator: fedavg
+  - override /scorer: global_val_harm
+  - _self_
+
+experiment:
+  name: real_ctu13
+  notes: "Real-source FL on CTU-13 (source-id clients, no label/update poisoning)."

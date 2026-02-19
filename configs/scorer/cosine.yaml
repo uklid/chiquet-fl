@@ -1,0 +1,5 @@
+name: cosine
+params:
+  reference: median
+  trim_ratio: 0.1
+  eps: 1.0e-12

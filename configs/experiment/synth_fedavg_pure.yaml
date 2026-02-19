@@ -1,0 +1,10 @@
+# @package _global_
+defaults:
+  - override /dataset: synth2d
+  - override /aggregator: fedavg
+  - override /scorer: none
+  - _self_
+
+experiment:
+  name: synth_fedavg_pure
+  notes: "FedAvg pure baseline (uniform weights)"

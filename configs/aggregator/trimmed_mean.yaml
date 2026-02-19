@@ -1,0 +1,3 @@
+name: trimmed_mean
+params:
+  trim_ratio: 0.1

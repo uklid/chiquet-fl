@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+runs/
+results_master.csv
+paper_assets/
+.DS_Store
+.vscode/
+.idea/

@@ -1,0 +1,6 @@
+name: synth_ablation_B
+description: "Hydra multirun grid for ablation B (fixed cosine, vary aggregator, 3 seeds)."
+overrides:
+  - experiment=synth_ablation_B
+  - aggregator=fedavg,median,trimmed_mean,choquet_additive,choquet_2add
+  - seed=0,1,2

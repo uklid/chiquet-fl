@@ -1,0 +1,14 @@
+name: source_stratified
+params:
+  n_clients: 10
+  min_samples_per_client: 500
+  min_train_samples: ${.min_samples_per_client}
+  min_val_samples: 0
+  low_thr: 0.05
+  high_thr: 0.95
+  mixed_center: 0.5
+  mixed_width: 0.3
+  min_mixed_clients: 3
+  fallback_strategy: closest
+  per_bin: [3, 4, 3]
+  seed: ${seed}

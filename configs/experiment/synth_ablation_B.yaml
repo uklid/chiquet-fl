@@ -1,0 +1,19 @@
+# @package _global_
+defaults:
+  - override /dataset: synth2d
+  - override /scorer: cosine
+  - _self_
+
+experiment:
+  name: synth_ablation_B
+  notes: "Ablation B: fix scorer=cosine, vary aggregator."
+  # Used by external multirun override:
+  # aggregator=fedavg,median,trimmed_mean,choquet_additive,choquet_2add
+  aggregators: [fedavg, median, trimmed_mean, choquet_additive, choquet_2add]
+  seeds: [0, 1, 2]
+
+dataset:
+  params:
+    noise_clients_frac: 0.3
+    noise_rate: 0.2
+    attack_clients_frac: 0.1

@@ -1,0 +1,18 @@
+name: ctu13
+params:
+  data_path: datasets/CTU-13/train_test_network.csv
+  file_format: auto
+  delimiter: ","
+  max_rows: null
+  label_col: null
+  label_col_candidates: ["Label", "label", "class", "Class"]
+  source_col: null
+  source_col_candidates: ["SrcAddr", "Src IP Addr", "src_ip", "srcaddr", "source_ip", "Source IP"]
+  drop_cols: []
+  benign_labels: ["normal", "Normal", "background", "Background", "benign", "Benign", "0"]
+  attack_labels: null
+  global_test_frac: 0.2
+  global_val_frac: 0.1
+  standardize_mode: global_train_only
+  fillna: median
+  attack_ratio_threshold: 0.8
